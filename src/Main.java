@@ -129,25 +129,7 @@ public class Main {
                 break;
 				
             case 4:
-                System.out.println("");
-                System.out.println("4.Calculate Average Marks");
-
-                if(studentList.size()==0){
-                    System.out.println("Sorry....No student records available");
-                }
-                else{
-                    double totalMarks=0;
-
-                    for(Student s: studentList){
-                        totalMarks=totalMarks + s.getMarks();
-                    }
-
-                    double average = totalMarks/studentList.size();
-                    System.out.println("Total Students : " + studentList.size());
-                    System.out.println("Total Marks    : " + totalMarks);
-                    System.out.println("Average Marks  : " + average);
-                }
-                break;
+                
             
             case 5:
                    
