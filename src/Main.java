@@ -129,10 +129,32 @@ public class Main {
                 break;
 				
             case 4:
-                
+                 System.out.println("");
+                System.out.println("4.Calculate Average Marks");
+
+                if(studentList.size()==0){
+                    System.out.println("Sorry....No student records available");
+                }
+                else{
+                    double totalMarks=0;
+
+                    for(Student s: studentList){
+                        totalMarks=totalMarks + s.getMarks();
+                    }
+
+                    double average = totalMarks/studentList.size();
+                    System.out.println("Total Students : " + studentList.size());
+                    System.out.println("Total Marks    : " + totalMarks);
+                    System.out.println("Average Marks  : " + average);
+                }
+                break;
             
             case 5:
-                   
+                 System.out.println("\nExiting the system. Thank you!");
+                    break;
+
+                default:
+                    System.out.println("\n[Invalid Input] Please enter a valid choice between 1 and 5.");   
         }
 
     }while(choice !=5);
