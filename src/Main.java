@@ -61,6 +61,38 @@ public class Main {
         System.out.println("\nEnter your choice 1-5 :");
         choice= sc.nextInt();
 
+        switch(choice){
+            case 1:
+                System.out.println("");
+                System.out.println("1.Add New Student Recode");
+                System.out.println("Enter Student ID : ");
+                int id = sc1.nextInt();   
+
+                sc1.nextLine();
+
+                System.out.println("Enter Student Name : ");
+                String name=sc1.nextLine();
+
+                System.out.println("Enter Student Marks : ");
+                double marks=sc1.nextDouble();
+
+                Student st = new Student(id,name,marks);
+                studentList.add(st);
+
+                System.out.println("Student record added successfully!");
+                break;
+
+            case 2:
+               
+			   
+            case 3:
+                
+				
+            case 4:
+                
+            
+            case 5:
+                   
         }
 
     }while(choice !=5);
