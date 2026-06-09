@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class Student{
     private int studentID;
     private String studentName;
@@ -36,4 +37,34 @@ class Student{
     }
 
 
+}
+
+public class Main {
+    public static void main (String arg[]){
+    System.out.println("Welcome to Student Grade Management System!");
+
+    ArrayList<Student> studentList=new ArrayList<>();
+    Scanner sc=new Scanner(System.in);
+    Scanner sc1=new Scanner(System.in);
+
+    int choice;
+
+    do{
+        System.out.println("\n================= Student Grade Management System =========================");
+        
+        System.out.println("1.Add New Student Recode");
+        System.out.println("2.View All Student Records");
+        System.out.println("3.Search Student by ID");
+        System.out.println("4.Calculate Average Marks");
+        System.out.println("5.Exit");
+
+        System.out.println("\nEnter your choice 1-5 :");
+        choice= sc.nextInt();
+
+        }
+
+    }while(choice !=5);
+
+
+    }
 }
