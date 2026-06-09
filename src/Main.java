@@ -1,4 +1,7 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+
+
 class Student{
     private int studentID;
     private String studentName;
@@ -83,7 +86,18 @@ public class Main {
                 break;
 
             case 2:
-               
+                System.out.println("");
+                System.out.println("2.View All Student Records");
+
+                if(studentList.size()==0){
+                    System.out.println("Sorry....No student records available");
+                }else{
+                    for(Student s: studentList){
+                        System.out.println("Student ID :" + s.getStudentID() +" || " + " Student Name : " + s.getStudentName() +" || " + " Student Marks : " + s.getMarks());
+                    }
+                    System.out.println("Total Students: " + studentList.size());
+                }
+                break;
 			   
             case 3:
                 
